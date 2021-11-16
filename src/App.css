@@ -1,0 +1,56 @@
+.cardgrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  
+}
+.cardimg{
+    object-fit: contain;
+    height:300px;
+}
+
+.title{
+    font-size: 2vh;
+    font-weight: 900;
+}
+.navbar-brand{
+        font-size: 4vh;
+}
+.nav-link{
+    font-size: 4vh;
+}
+.btn-success{
+    font-size: 4vh;
+}
+.form-control{
+    font-size: 4vh;
+}
+.finalprice{
+    text-align: center;
+    color:red;
+    font-weight: 900;
+    font-size: 4vh;
+}
+.price{
+    color:yellowgreen;
+    text-decoration:line-through;
+    text-align: center;
+}
+.rating{
+    color:rgb(255, 255, 255);
+    background-color: blue;
+    width:max-content;
+    padding: 10px;
+    border-radius: 2px;
+}
+.btn-info{
+    width:30%
+}
+@media screen and (max-width:1024px)
+{
+    .cardgrid{
+        grid-template: 1fr;
+    }
+    .btn-info{
+        width:20%
+    }
+}
