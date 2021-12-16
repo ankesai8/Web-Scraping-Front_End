@@ -13,7 +13,7 @@ function Card({match})
         {
             if(match.path==="/:id")
             {
-                const {data} = await axios.get(`https://webscrap437.herokuapp.com/products/${match.params.id}`);
+                const {data} = await axios.get(`https://web-888.herokuapp.com/products/${match.params.id}`);
                 console.log("search");
                 console.log(data);
                 setCard(data);
@@ -26,7 +26,7 @@ function Card({match})
          }
         else
         {
-            const {data} = await axios.get("https://webscrap437.herokuapp.com/products");
+            const {data} = await axios.get("https://web-888.herokuapp.com/products");
            
             pagination(data);
         }
